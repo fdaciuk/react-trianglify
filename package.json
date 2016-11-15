@@ -1,0 +1,25 @@
+{
+  "name": "react-trianglify",
+  "version": "0.0.0",
+  "description": "React Trianglify",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fdaciuk/react-trianglify.git"
+  },
+  "keywords": [
+    "react",
+    "reactjs",
+    "trianglify",
+    "canvas"
+  ],
+  "author": "Fernando Daciuk - @fdaciuk",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fdaciuk/react-trianglify/issues"
+  },
+  "homepage": "https://github.com/fdaciuk/react-trianglify#readme"
+}
