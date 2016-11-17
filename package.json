@@ -2,7 +2,7 @@
   "name": "react-trianglify",
   "version": "0.0.0",
   "description": "React Trianglify",
-  "main": "dist/index.js",
+  "main": "dist/trianglify.js",
   "scripts": {
     "test": "yarn run lint && yarn run storyshots",
     "storyshots": "storyshots -c storybook",
