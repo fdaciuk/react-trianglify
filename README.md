@@ -33,7 +33,10 @@ ReactDOM.render(
 
 By taking `output`, you can use any [trianglify][trianglify-url-options] allowed options.
 
-`output` may be `canvas` (default), `svg` or `png`.
+Possible `output` values:
+- `canvas` (default)
+- `svg`
+- `png`
 
 ## Storybook
 
