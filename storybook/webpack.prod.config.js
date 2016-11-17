@@ -9,12 +9,13 @@ module.exports = validate({
 
   externals: {
     react: 'React',
-    'react-dom': 'ReactDOM'
+    'react-dom': 'ReactDOM',
+    trianglify: 'Trianglify'
   },
 
   output: {
     path: path.join(__dirname, '..', 'dist'),
-    filename: '[name]-[hash].js',
+    filename: 'trianglify.js',
     libraryTarget: 'umd'
   },
 

@@ -1,17 +1,21 @@
 # React Trianglify
 
 > React Wrapper Component for [trianglify][trianglify-url]
+
 ## Installation
+
+Install dependencies and `react-trianglify`:
+
 **Using NPM:**
 
 ```console
-npm install --save react-trianglify
+npm install --save react react-dom trianglify react-trianglify
 ```
 
 **Using Yarn:**
 
 ```console
-yarn add react-trianglify
+yarn add react react-dom trianglify react-trianglify
 ```
 
 ## Usage

@@ -10,10 +10,9 @@
     "lint": "standard --verbose | snazzy",
     "lint:fix": "standard --fix",
     "storybook": "webpack-dashboard -- start-storybook -p 3000 -c storybook",
-    "build": "yarn run build:component && yarn run deploy:storybook",
-    "build:component": "cross-env NODE_ENV=production webpack --progress --config storybook/webpack.prod.config -p",
+    "build": "cross-env NODE_ENV=production webpack --progress --config storybook/webpack.prod.config -p",
     "build-storybook": "cross-env NODE_ENV=production build-storybook -c storybook -o .out",
-    "deploy:storybook": "yarn run build && storybook-to-ghpages"
+    "deploy": "yarn run build && storybook-to-ghpages"
   },
   "repository": {
     "type": "git",
