@@ -1,9 +1,7 @@
 # React Trianglify
 
 > React Wrapper Component for [trianglify][trianglify-url]
-
 ## Installation
-
 **Using NPM:**
 
 ```console
@@ -18,8 +16,6 @@ yarn add react-trianglify
 
 ## Usage
 
-1) Import `Trianglify` component:
-
 ```js
 import Trianglify from 'react-trianglify'
 
@@ -33,7 +29,7 @@ ReactDOM.render(
 
 By taking `output`, you can use any [trianglify][trianglify-url-options] allowed options.
 
-`output` may be `canvas`, `svg` or `png`.
+`output` may be `canvas` (default), `svg` or `png`.
 
 ## Storybook
 
