@@ -2,8 +2,11 @@
   "name": "react-trianglify",
   "version": "0.0.0",
   "description": "React Trianglify",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
+    "build": "cross-env NODE_ENV=production webpack --progress --config webpack.prod.config -p",
+    "storybook": "webpack-dashboard -- start-storybook -p 3000 -c storybook",
+    "build-storybook": "build-storybook -c storybook",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,5 +24,19 @@
   "bugs": {
     "url": "https://github.com/fdaciuk/react-trianglify/issues"
   },
-  "homepage": "https://github.com/fdaciuk/react-trianglify#readme"
+  "homepage": "https://github.com/fdaciuk/react-trianglify#readme",
+  "dependencies": {
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "trianglify": "^1.0.1"
+  },
+  "devDependencies": {
+    "@kadira/storybook": "^2.29.7",
+    "cross-env": "^3.1.3",
+    "standard": "^8.5.0",
+    "standard-loader": "^5.0.0",
+    "webpack": "^1.13.3",
+    "webpack-dashboard": "^0.2.0",
+    "webpack-validator": "^2.2.9"
+  }
 }
