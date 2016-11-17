@@ -4,10 +4,15 @@
   "description": "React Trianglify",
   "main": "dist/index.js",
   "scripts": {
-    "build": "cross-env NODE_ENV=production webpack --progress --config webpack.prod.config -p",
+    "test": "yarn run lint && yarn run storyshots",
+    "storyshots": "storyshots -c storybook",
+    "storyshots:fix": "yarn run test-storybook -- -u",
+    "lint": "standard --verbose | snazzy",
+    "lint:fix": "standard --fix",
     "storybook": "webpack-dashboard -- start-storybook -p 3000 -c storybook",
-    "build-storybook": "build-storybook -c storybook",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "yarn test && yarn run build:component && yarn run build:storybook",
+    "build:component": "cross-env NODE_ENV=production webpack --progress --config webpack.prod.config -p",
+    "build:storybook": "build-storybook -c storybook"
   },
   "repository": {
     "type": "git",
@@ -32,6 +37,8 @@
   },
   "devDependencies": {
     "@kadira/storybook": "^2.29.7",
+    "@kadira/storybook-deployer": "^1.2.0",
+    "@kadira/storyshots": "^2.1.0",
     "cross-env": "^3.1.3",
     "standard": "^8.5.0",
     "standard-loader": "^5.0.0",
