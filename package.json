@@ -1,6 +1,6 @@
 {
   "name": "react-trianglify",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "React Trianglify",
   "main": "dist/trianglify.js",
   "scripts": {
