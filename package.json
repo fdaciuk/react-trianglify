@@ -10,10 +10,10 @@
     "lint": "standard --verbose | snazzy",
     "lint:fix": "standard --fix",
     "storybook": "webpack-dashboard -- start-storybook -p 3000 -c storybook",
-    "build": "yarn test && yarn run build:component && yarn run build:storybook",
-    "build:component": "cross-env NODE_ENV=production webpack --progress --config webpack.prod.config -p",
-    "build-storybook": "build-storybook -c storybook -o .out",
-    "deploy:storybook": "storybook-to-ghpages"
+    "build": "yarn run build:component && yarn run deploy:storybook",
+    "build:component": "cross-env NODE_ENV=production webpack --progress --config storybook/webpack.prod.config -p",
+    "build-storybook": "cross-env NODE_ENV=production build-storybook -c storybook -o .out",
+    "deploy:storybook": "yarn run build && storybook-to-ghpages"
   },
   "repository": {
     "type": "git",
@@ -40,6 +40,11 @@
     "@kadira/storybook": "^2.29.7",
     "@kadira/storybook-deployer": "^1.2.0",
     "@kadira/storyshots": "^2.1.0",
+    "babel-core": "^6.18.2",
+    "babel-loader": "^6.2.7",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-stage-0": "^6.16.0",
     "canvas": "^1.6.2",
     "cross-env": "^3.1.3",
     "snazzy": "^5.0.0",
