@@ -12,7 +12,8 @@
     "storybook": "webpack-dashboard -- start-storybook -p 3000 -c storybook",
     "build": "yarn test && yarn run build:component && yarn run build:storybook",
     "build:component": "cross-env NODE_ENV=production webpack --progress --config webpack.prod.config -p",
-    "build:storybook": "build-storybook -c storybook"
+    "build-storybook": "build-storybook -c storybook -o .out",
+    "deploy:storybook": "storybook-to-ghpages"
   },
   "repository": {
     "type": "git",

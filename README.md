@@ -41,6 +41,6 @@ You can access `react-trianglify` storybook [here][storybook-url]
 
 [trianglify-url]: https://github.com/qrohlf/trianglify
 [trianglify-url-options]: https://github.com/qrohlf/trianglify#options
-[storybook-url]: https://fdaciuk.github.io/react-trianglify
+[storybook-url]: https://fdaciuk.github.io/react-trianglify/
 [license-url]: https://github.com/fdaciuk/licenses/blob/master/MIT-LICENSE.md
 
