@@ -4,18 +4,16 @@
 
 ## Installation
 
-Install dependencies and `react-trianglify`:
-
 **Using NPM:**
 
 ```console
-npm install --save react react-dom trianglify react-trianglify
+npm install --save react-trianglify
 ```
 
 **Using Yarn:**
 
 ```console
-yarn add react react-dom trianglify react-trianglify
+yarn add react-trianglify
 ```
 
 ## Usage
