@@ -14,9 +14,9 @@
     "build-storybook": "cross-env NODE_ENV=production build-storybook -c storybook -o .out",
     "update:dev": "git pull origin dev",
     "update:master": "git push origin dev && git checkout master && git merge dev && git push origin master && git checkout dev",
-    "preversion": "yarn run update:dev && yarn run deploy",
+    "preversion": "yarn run update:dev && yarn run deploy && yarn run build",
     "postversion": "npm publish && yarn run update:master",
-    "deploy": "yarn run build && storybook-to-ghpages"
+    "deploy": "storybook-to-ghpages"
   },
   "repository": {
     "type": "git",
