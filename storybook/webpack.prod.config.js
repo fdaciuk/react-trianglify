@@ -10,7 +10,7 @@ module.exports = validate({
   externals: {
     react: 'React',
     'react-dom': 'ReactDOM',
-    trianglify: 'Trianglify'
+    trianglify: 'trianglify'
   },
 
   output: {
