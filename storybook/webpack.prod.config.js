@@ -8,8 +8,7 @@ module.exports = validate({
   entry: path.join(__dirname, '..', 'src', 'index'),
 
   externals: {
-    react: 'React',
-    'react-dom': 'ReactDOM',
+    react: 'react',
     trianglify: 'trianglify'
   },
 
