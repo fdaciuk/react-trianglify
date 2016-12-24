@@ -60,10 +60,10 @@ const allOptions = (PropTypes) => ({
 export const extractProps = (PropTypes) => {
   const options = allOptions(PropTypes)
 
-  return (optionName) => {
+  return (optionName) => (
     Object.keys(options).reduce((acc, option) => ({
       ...acc,
       [option]: options[option][optionName]
     }), {})
-  }
+  )
 }
