@@ -11,13 +11,12 @@
     "lint:fix": "standard --fix",
     "storybook": "webpack-dashboard -- start-storybook -p 3000 -c storybook",
     "build": "cross-env NODE_ENV=production webpack --progress --config storybook/webpack.prod.config -p",
-    "build-storybook": "cross-env NODE_ENV=production build-storybook -c storybook -o .out",
+    "build-storybook": "cross-env NODE_ENV=production build-storybook -c storybook -o docs",
     "update:dev": "git pull origin dev",
     "update:master": "git push origin dev && git checkout master && git merge dev && git push origin master && git checkout dev",
     "commit:build": "git commit --allow-empty -S -m 'Minifying'",
-    "preversion": "yarn run update:dev && yarn run deploy && yarn run build && yarn commit:build",
-    "postversion": "npm publish && yarn run update:master",
-    "deploy": "storybook-to-ghpages"
+    "preversion": "yarn run update:dev && yarn run build && yarn commit:build",
+    "postversion": "npm publish && yarn run update:master"
   },
   "repository": {
     "type": "git",
@@ -42,7 +41,6 @@
   },
   "devDependencies": {
     "@kadira/storybook": "^2.29.7",
-    "@kadira/storybook-deployer": "^1.2.0",
     "@kadira/storyshots": "^2.1.0",
     "babel-core": "^6.18.2",
     "babel-loader": "^6.2.7",
