@@ -13,7 +13,7 @@
     "build": "cross-env NODE_ENV=production webpack --progress --config storybook/webpack.prod.config -p",
     "build:storybook": "cross-env NODE_ENV=production build-storybook -c storybook -o docs",
     "update:dev": "git pull origin dev",
-    "update:master": "git push origin dev && git checkout master && git merge dev && git push origin master && git checkout dev",
+    "update:master": "git push origin dev && git checkout master && git merge dev && git push origin master --tags && git checkout dev",
     "commit:build": "git add . && git commit --allow-empty -S -m 'Minifying'",
     "preversion": "yarn run update:dev && yarn run build && yarn build:storybook && yarn commit:build",
     "postversion": "npm publish && yarn run update:master"
