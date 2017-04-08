@@ -3,6 +3,8 @@
   "version": "1.0.10",
   "description": "React Trianglify",
   "main": "dist/trianglify.js",
+  "jsnext:main": "src/index.js",
+  "module": "src/index.js",
   "scripts": {
     "test": "yarn run lint && yarn run storyshots",
     "storyshots": "storyshots -c storybook",
