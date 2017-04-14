@@ -1,6 +1,7 @@
 'use strict'
 
-import { Component, PropTypes } from 'react'
+import { Component } from 'react'
+import PropTypes from 'prop-types'
 
 class Timer extends Component {
   componentDidMount () {
