@@ -1,5 +1,6 @@
 'use strict'
 
+const { join } = require('path')
 const webpackConfig = require('@kadira/storybook/dist/server/config/defaults/webpack.config.js')
 
 module.exports = function (config, env) {
@@ -7,7 +8,7 @@ module.exports = function (config, env) {
 
   newConfig.module.preLoaders = (newConfig.module.preLoaders || []).concat({
     test: /\.js$/,
-    exclude: /node_modules/,
+    include: join(__dirname, '..', 'src'),
     loader: 'standard'
   })
 

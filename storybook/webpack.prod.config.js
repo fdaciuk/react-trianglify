@@ -1,19 +1,23 @@
 'use strict'
 
-const path = require('path')
+const { join } = require('path')
 const webpack = require('webpack')
 const validate = require('webpack-validator')
 
+const root = join(__dirname, '..')
+const src = join(root, 'src')
+
 module.exports = validate({
-  entry: path.join(__dirname, '..', 'src', 'index'),
+  entry: join(src, 'index'),
 
   externals: {
     react: 'react',
+    'prop-types': 'prop-types',
     trianglify: 'trianglify'
   },
 
   output: {
-    path: path.join(__dirname, '..', 'dist'),
+    path: join(root, 'dist'),
     filename: 'trianglify.js',
     libraryTarget: 'umd'
   },
@@ -34,25 +38,25 @@ module.exports = validate({
   ],
 
   module: {
-    preLoaders: [{
-      test: /\.js$/,
-      exclude: /node_modules/,
-      include: /src/,
-      loader: 'standard'
-    }],
-
-    loaders: [{
-      test: /\.js$/,
-      exclude: /node_modules/,
-      include: /src/,
-      loader: 'babel'
-    }]
+    rules: [
+      {
+        enforce: 'pre',
+        test: /\.js$/,
+        include: src,
+        use: 'standard-loader'
+      },
+      {
+        test: /\.js$/,
+        include: src,
+        use: 'babel-loader'
+      }
+    ]
   },
 
   resolve: {
     alias: {
-      src: path.join(__dirname, '..', 'src'),
-      components: path.join(__dirname, '..', 'src', 'components')
+      src,
+      components: join(src, 'components')
     }
   }
 })
