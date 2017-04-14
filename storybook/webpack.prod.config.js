@@ -29,11 +29,17 @@ module.exports = {
     }),
 
     new webpack.optimize.UglifyJsPlugin({
-      compress: { warnings: false }
-    }),
-
-    new webpack.optimize.DedupePlugin(),
-    new webpack.optimize.OccurrenceOrderPlugin()
+      sourceMap: true,
+      mangle: {
+        screw_ie8: true,
+        keep_fnames: true
+      },
+      compress: {
+        screw_ie8: true,
+        warnings: false
+      },
+      comments: false
+    })
   ],
 
   module: {
