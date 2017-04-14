@@ -2,12 +2,11 @@
 
 const { join } = require('path')
 const webpack = require('webpack')
-const validate = require('webpack-validator')
 
 const root = join(__dirname, '..')
 const src = join(root, 'src')
 
-module.exports = validate({
+module.exports = {
   entry: join(src, 'index'),
 
   externals: {
@@ -59,4 +58,4 @@ module.exports = validate({
       components: join(src, 'components')
     }
   }
-})
+}
