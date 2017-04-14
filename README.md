@@ -16,6 +16,10 @@ npm install --save react-trianglify
 yarn add react-trianglify
 ```
 
+## Dependencies
+
+You must have `react` and `trianglify` already installed on your project.
+
 ## Usage
 
 ```js
