@@ -22,7 +22,10 @@
     "postversion": "npm publish && yarn update:master"
   },
   "standard": {
-    "ignore": ["dist", "docs"]
+    "ignore": [
+      "dist",
+      "docs"
+    ]
   },
   "repository": {
     "type": "git",
@@ -43,7 +46,6 @@
   "peerDependencies": {
     "prop-types": "^15.5.8",
     "react": "^15.4.2",
-    "react-dom": "^15.4.2",
     "trianglify": "^1.0.1"
   },
   "devDependencies": {
@@ -63,7 +65,6 @@
     "standard-loader": "^5.0.0",
     "trianglify": "^1.0.1",
     "webpack": "^2.3.3",
-    "webpack-dashboard": "^0.2.0",
-    "webpack-validator": "^2.2.9"
+    "webpack-dashboard": "^0.2.0"
   }
 }
