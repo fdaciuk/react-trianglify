@@ -1,0 +1,107 @@
+---
+name: React Trianglify
+route: /
+---
+
+import { Playground, Props } from 'docz'
+import Trianglify from './index'
+import Timer from './timer'
+
+# React Trianglify
+
+Trianglify is a library that can render in canvas, SVG and PNG.
+This library will help you to use trianglify with React.js :)
+
+## Props
+
+You can use all options from [trianglify](https://github.com/qrohlf/trianglify) as props :)
+
+<Props of={Trianglify} />
+
+---
+
+## Rendering on canvas
+
+### Without props
+
+<Playground>
+  <Trianglify />
+</Playground>
+
+### Passing a width and height
+
+<Playground>
+  <Trianglify width={500} height={300} />
+</Playground>
+
+### Using cell_size
+
+<Playground>
+  <Trianglify cell_size={20} />
+</Playground>
+
+### Updating for every 1.5s, using canvas
+
+**Render canvas with Timer**
+
+<Playground>
+  <Timer>
+    {() => (
+      <Trianglify />
+    )}
+  </Timer>
+</Playground>
+
+---
+
+## Rendering on SVG
+
+### Output in SVG
+
+<Playground>
+  <Trianglify output='svg' />
+</Playground>
+
+### SVG with size
+
+<Playground>
+  <Trianglify width={500} height={500} output='svg' />
+</Playground>
+
+### Updating for every 1.5s, using SVG
+
+<Playground>
+  <Timer>
+    {() => (
+      <Trianglify output='svg' />
+    )}
+  </Timer>
+</Playground>
+
+---
+
+## Rendering on PNG
+
+### Output in PNG
+
+<Playground>
+  <Trianglify output='png' />
+</Playground>
+
+### PNG with size
+
+<Playground>
+  <Trianglify width={500} height={500} output='png' />
+</Playground>
+
+### Updating for every 1.5s, using PNG
+
+<Playground>
+  <Timer>
+    {() => (
+      <Trianglify output='png' />
+    )}
+  </Timer>
+</Playground>
+
+
