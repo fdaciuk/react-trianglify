@@ -12,7 +12,7 @@
     "storyshots:fix": "yarn storyshots -- -u",
     "lint": "standard --verbose | snazzy",
     "lint:fix": "standard --fix",
-    "storybook": "webpack-dashboard -- start-storybook -p 3000 -c storybook",
+    "storybook": "start-storybook -p 3000 -c storybook",
     "build": "cross-env NODE_ENV=production webpack --progress --config storybook/webpack.prod.config -p",
     "build:storybook": "cross-env NODE_ENV=production build-storybook -c storybook -o docs",
     "update:dev": "git pull origin dev",
@@ -64,7 +64,6 @@
     "standard": "^8.5.0",
     "standard-loader": "^5.0.0",
     "trianglify": "^1.0.1",
-    "webpack": "^2.3.3",
-    "webpack-dashboard": "^0.2.0"
+    "webpack": "^2.3.3"
   }
 }
