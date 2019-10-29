@@ -8,8 +8,10 @@
     "native": false,
     "codeSandbox": true,
     "themeConfig": {},
-    "separator": "-"
+    "separator": "-",
+    "dest": "/docs"
   },
+  "props": [],
   "entries": [
     {
       "key": "src/docz.mdx",
@@ -100,6 +102,5 @@
         ]
       }
     }
-  ],
-  "props": []
+  ]
 }
