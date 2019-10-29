@@ -7,14 +7,15 @@
   "module": "src/index.js",
   "scripts": {
     "dev": "docz dev",
-    "build": "cross-env NODE_ENV=production docz build",
+    "build": "cross-env NODE_ENV=production webpack",
+    "build:docz": "cross-env NODE_ENV=production docz build",
     "test": "yarn lint",
     "lint": "standard --verbose | snazzy",
     "lint:fix": "standard --fix",
     "update:dev": "git pull origin dev",
     "update:master": "git push origin dev && git checkout master && git merge dev && git push origin master --tags && git checkout dev",
     "commit:build": "git add . && git commit --allow-empty -S -m 'Minifying'",
-    "preversion": "yarn update:dev && yarn build && yarn build:storybook && yarn commit:build",
+    "preversion": "yarn update:dev && yarn build && yarn build:docz && yarn commit:build",
     "postversion": "npm publish && yarn update:master"
   },
   "standard": {
