@@ -1,6 +1,6 @@
 {
   "name": "react-trianglify",
-  "version": "1.2.0",
+  "version": "2.0.0",
   "description": "React Trianglify",
   "main": "dist/trianglify.js",
   "jsnext:main": "src/index.js",
