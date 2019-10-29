@@ -3,13 +3,14 @@
     "title": "React Trianglify",
     "description": "React Trianglify",
     "menu": [],
-    "version": "1.2.0",
+    "version": "2.0.0",
     "repository": "https://github.com/fdaciuk/react-trianglify",
     "native": false,
     "codeSandbox": true,
     "themeConfig": {},
     "separator": "-",
-    "dest": "/docs"
+    "dest": "/docs",
+    "base": "/react-trianglify"
   },
   "props": [],
   "entries": [
@@ -17,7 +18,7 @@
       "key": "src/docz.mdx",
       "value": {
         "name": "React Trianglify",
-        "route": "/",
+        "route": "/react-trianglify/",
         "id": "87e2a458337d4737a13ef012e405c020",
         "filepath": "src/docz.mdx",
         "link": "https://github.com/fdaciuk/react-trianglify/edit/master/src/docz.mdx",

@@ -1,9 +1,9 @@
 {
-  "vendors.js": "/static/js/vendors.fda04b60.js",
-  "vendors.js.map": "/static/js/vendors.2f785f5fce25559dded6.js.map",
-  "app.js": "/static/js/app.2f785f5fce25559dded6.js",
-  "app.js.map": "/static/js/app.2f785f5fce25559dded6.js.map",
-  "src-docz.js": "/static/js/src-docz.d9837004.js",
-  "src-docz.js.map": "/static/js/src-docz.2f785f5fce25559dded6.js.map",
-  "index.html": "/index.html"
+  "vendors.js": "/react-trianglify/static/js/vendors.d961dc4c.js",
+  "vendors.js.map": "/react-trianglify/static/js/vendors.b9049c973d9bb68cccd8.js.map",
+  "app.js": "/react-trianglify/static/js/app.b9049c973d9bb68cccd8.js",
+  "app.js.map": "/react-trianglify/static/js/app.b9049c973d9bb68cccd8.js.map",
+  "src-docz.js": "/react-trianglify/static/js/src-docz.ba27f603.js",
+  "src-docz.js.map": "/react-trianglify/static/js/src-docz.b9049c973d9bb68cccd8.js.map",
+  "index.html": "/react-trianglify/index.html"
 }
