@@ -42,7 +42,7 @@ Possible `output` values:
 
 ## Storybook
 
-You can access `react-trianglify` storybook [here][storybook-url]
+You can access `react-trianglify` live documentation [here][storybook-url]
 
 ## License
 
