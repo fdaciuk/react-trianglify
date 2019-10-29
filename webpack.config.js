@@ -10,7 +10,7 @@ module.exports = {
   externals: {
     react: 'react',
     'prop-types': 'prop-types',
-    'trianglify': 'trianglify',
+    trianglify: 'trianglify',
     canvas: 'canvas'
   },
 

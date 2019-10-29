@@ -2,11 +2,11 @@ import { useState, useEffect } from 'react'
 import t from 'prop-types'
 
 function Timer ({ time = 1500, children }) {
-  const [fakeState, setFakeState] = useState({})
+  const [, forceSetState] = useState({})
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setFakeState({})
+      forceSetState({})
     }, time)
 
     return () => {
