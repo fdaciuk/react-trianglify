@@ -1,9 +1,9 @@
 {
   "vendors.js": "/static/js/vendors.fda04b60.js",
-  "vendors.js.map": "/static/js/vendors.ca755925c3eed5d6c182.js.map",
-  "app.js": "/static/js/app.ca755925c3eed5d6c182.js",
-  "app.js.map": "/static/js/app.ca755925c3eed5d6c182.js.map",
-  "src-docz.js": "/static/js/src-docz.ec0decc7.js",
-  "src-docz.js.map": "/static/js/src-docz.ca755925c3eed5d6c182.js.map",
+  "vendors.js.map": "/static/js/vendors.2f785f5fce25559dded6.js.map",
+  "app.js": "/static/js/app.2f785f5fce25559dded6.js",
+  "app.js.map": "/static/js/app.2f785f5fce25559dded6.js.map",
+  "src-docz.js": "/static/js/src-docz.d9837004.js",
+  "src-docz.js.map": "/static/js/src-docz.2f785f5fce25559dded6.js.map",
   "index.html": "/index.html"
 }
