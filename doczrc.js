@@ -1,3 +1,4 @@
 export default {
-  dest: '/docs'
+  dest: '/docs',
+  base: '/react-trianglify'
 }
