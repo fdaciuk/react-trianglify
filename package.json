@@ -62,7 +62,7 @@
     "webpack-cli": "3.3.9"
   },
   "engines": {
-    "node": "=11.6.0"
+    "node": ">=11.6.0"
   },
   "dependencies": {}
 }
