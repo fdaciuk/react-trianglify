@@ -40,9 +40,9 @@ Possible `output` values:
 - `svg`
 - `png`
 
-## Storybook
+## Live documentation
 
-You can access `react-trianglify` live documentation [here][storybook-url]
+You can access `react-trianglify` live documentation [here][doc-url]
 
 ## License
 
@@ -50,6 +50,6 @@ You can access `react-trianglify` live documentation [here][storybook-url]
 
 [trianglify-url]: https://github.com/qrohlf/trianglify
 [trianglify-url-options]: https://github.com/qrohlf/trianglify#options
-[storybook-url]: https://fdaciuk.github.io/react-trianglify/
+[doc-url]: https://fdaciuk.github.io/react-trianglify/
 [license-url]: https://github.com/fdaciuk/licenses/blob/master/MIT-LICENSE.md
 
