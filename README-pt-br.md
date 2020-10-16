@@ -35,7 +35,7 @@ ReactDOM.render(
 
 ## Propriedades
 
-Tirando `output`, você pode usar opção do [trianglify][trianglify-url-options] permitida.
+Tirando `output`, você pode usar qualquer opção permitida do [trianglify][trianglify-url-options].
 
 Possíveis valores de `output`:
 - `canvas` (padrão)
