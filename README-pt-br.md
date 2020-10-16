@@ -1,28 +1,28 @@
 # React Trianglify
 
-> React Wrapper Component for [trianglify][trianglify-url]
+> Componente React Wrapper para [trianglify][trianglify-url]
 
 :us: [English][en-docs]&nbsp;&nbsp;|&nbsp;&nbsp;:brazil: [Português do Brasil][pt-br-docs]
 
-## Installation
+## Instalação
 
-**Using NPM:**
+**Utilizando NPM:**
 
 ```console
 npm install --save react-trianglify
 ```
 
-**Using Yarn:**
+**Utilizando Yarn:**
 
 ```console
 yarn add react-trianglify
 ```
 
-## Dependencies
+## Dependências
 
-You must have `react` and `trianglify` already installed on your project.
+Você precisa ter o `react` e o `trianglify` instalados em seu projeto.
 
-## Usage
+## Uso
 
 ```js
 import Trianglify from 'react-trianglify'
@@ -33,20 +33,20 @@ ReactDOM.render(
 )
 ```
 
-## Props
+## Propriedades
 
-By taking `output`, you can use any [trianglify][trianglify-url-options] allowed options.
+Tirando `output`, você pode usar opção do [trianglify][trianglify-url-options] permitida.
 
-Possible `output` values:
-- `canvas` (default)
+Possíveis valores de `output`:
+- `canvas` (padrão)
 - `svg`
 - `png`
 
-## Live documentation
+## Documentação
 
-You can access `react-trianglify` live documentation [here][doc-url]
+Você pode acessar a documentação do `react-trianglify` [aqui][doc-url]
 
-## License
+## Licença
 
 [MIT][license-url] &copy; Fernando Daciuk
 
@@ -56,4 +56,3 @@ You can access `react-trianglify` live documentation [here][doc-url]
 [license-url]: https://github.com/fdaciuk/licenses/blob/master/MIT-LICENSE.md
 [en-docs]: /README.md
 [pt-br-docs]: /README-pt-br.md
-
