@@ -25,8 +25,8 @@
     "postversion": "npm publish"
   },
   "peerDependencies": {
-    "react": "17.0.0",
-    "trianglify": "4.1.1"
+    "react": "17.x",
+    "trianglify": "4.x"
   },
   "devDependencies": {
     "babel-eslint": "10.0.3",
