@@ -1,5 +1,2 @@
-docs
-storybook
-.editorconfig
-.babelrc
-yarn.lock
+example
+example-next

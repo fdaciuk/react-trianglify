@@ -22,6 +22,8 @@ yarn add react-trianglify
 
 You must have `react` and `trianglify` already installed on your project.
 
+PS.: If you have any problems with latest trianglify version, try to install the tested version `v4.1.1`.
+
 ## Usage
 
 ```js
@@ -40,7 +42,6 @@ By taking `output`, you can use any [trianglify][trianglify-url-options] allowed
 Possible `output` values:
 - `canvas` (default)
 - `svg`
-- `png`
 
 ## Live documentation
 
@@ -51,9 +52,9 @@ You can access `react-trianglify` live documentation [here][doc-url]
 [MIT][license-url] &copy; Fernando Daciuk
 
 [trianglify-url]: https://github.com/qrohlf/trianglify
-[trianglify-url-options]: https://github.com/qrohlf/trianglify#options
-[doc-url]: https://fdaciuk.github.io/react-trianglify/
+[trianglify-url-options]: https://github.com/qrohlf/trianglify#-configuration
+[doc-url]: https://fdaciuk.github.io/react-trianglify
 [license-url]: https://github.com/fdaciuk/licenses/blob/master/MIT-LICENSE.md
 [en-docs]: /README.md
-[pt-br-docs]: /README-pt-br.md
+[pt-br-docs]: /docs/README-pt-br.md
 
