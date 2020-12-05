@@ -22,6 +22,9 @@ yarn add react-trianglify
 
 Você precisa ter o `react` e o `trianglify` instalados em seu projeto.
 
+Obs.:  Se você tiver qualquer problema usando a versão mais recente do trianglify,
+instale a versão que foi testada com esse projeto `v4.1.1`.
+
 ## Uso
 
 ```js
@@ -33,26 +36,26 @@ ReactDOM.render(
 )
 ```
 
-## Propriedades
+## Propriedades (props)
 
-Tirando `output`, você pode usar qualquer opção permitida do [trianglify][trianglify-url-options].
+Tirando `output`, você pode usar qualquer opção permitida pelo [trianglify][trianglify-url-options].
 
-Possíveis valores de `output`:
+Possíveis valores para `output`:
 - `canvas` (padrão)
 - `svg`
-- `png`
 
-## Documentação
+## Exemplo ao vivo
 
-Você pode acessar a documentação do `react-trianglify` [aqui][doc-url]
+Você pode ver o `react-trianglify` funcionando [aqui][doc-url]
 
 ## Licença
 
 [MIT][license-url] &copy; Fernando Daciuk
 
 [trianglify-url]: https://github.com/qrohlf/trianglify
-[trianglify-url-options]: https://github.com/qrohlf/trianglify#options
-[doc-url]: https://fdaciuk.github.io/react-trianglify/
+[trianglify-url-options]: https://github.com/qrohlf/trianglify#-configuration
+[doc-url]: https://fdaciuk.github.io/react-trianglify
 [license-url]: https://github.com/fdaciuk/licenses/blob/master/MIT-LICENSE.md
 [en-docs]: /README.md
-[pt-br-docs]: /README-pt-br.md
+[pt-br-docs]: /docs/pt-br.md
+
