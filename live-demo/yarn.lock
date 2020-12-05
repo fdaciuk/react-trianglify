@@ -3182,10 +3182,10 @@ react-refresh@0.8.3:
   resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.8.3.tgz#721d4657672d400c5e3c75d063c4a85fb2d5d68f"
   integrity sha512-X8jZHc7nCMjaCqoU+V2I0cOhNW+QMBwSUkeXnTi8IPe6zaRWfn60ZzvFDZqWPfmSJfjub7dDW1SP0jaHWLu/hg==
 
-react-trianglify@3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/react-trianglify/-/react-trianglify-3.0.0.tgz#af369823ae1db937c6adf2a618c40ee811e91e3a"
-  integrity sha512-tRTpRip6Q6d00jYcFpufr0z63r9ioQsdt0VtbaPYezpUmQBvDoYvji7KDbzqp8M3nGuAG2HrJO1GR3GQRWJFsw==
+react-trianglify@3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/react-trianglify/-/react-trianglify-3.0.2.tgz#380bc952c19d20324644e9c9723e0417a6abce4f"
+  integrity sha512-/wuI3nFBRd5rNIEb3Gm/LOwQr1q5hAeiMMd1HCuA78S9ZLRwZnYIExhL1UYznQkXjN3lXL95rIJG9jr7mO3zUg==
 
 react@17.0.1:
   version "17.0.1"
