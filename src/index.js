@@ -1,83 +1,55 @@
-'use strict'
-
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
+import React, { useCallback, useMemo, useRef, useEffect, useState } from 'react'
 import trianglify from 'trianglify'
-import { extractProps } from './props'
 
-class Trianglify extends Component {
-  constructor () {
-    super()
-    this.state = { pattern: null }
-  }
+function Trianglify ({
+  output = 'canvas',
+  width = 600,
+  height = 400,
+  ...props
+}) {
+  const ref = useRef()
+  const [, forceUpdate] = useState({})
+  const svgOutput = useCallback((generateOutput) => {
+    generateOutput(ref.current)
+  }, [])
 
-  componentDidMount () {
-    this.generatePattern(this.props)
-  }
+  const canvasOutput = useCallback((generateOutput) => {
+    const canvas = generateOutput()
+    const ctx = ref.current.getContext('2d')
+    ctx.drawImage(canvas,0, 0, width, height)
+  }, [])
 
-  componentWillReceiveProps (nextProps) {
-    this.generatePattern(nextProps)
-  }
+  const choosenOutput = useMemo(() => ({
+    canvas: {
+      output: 'toCanvas',
+      method: canvasOutput,
+    },
+    svg: {
+      output: 'toSVG',
+      method: svgOutput,
+    },
+  }), [])
 
-  generatePng (outputMethod) {
-    this.setState({ pattern: outputMethod() })
-  }
-
-  generateSvg (outputMethod) {
-    this.setState({ pattern: outputMethod().innerHTML })
-  }
-
-  generateCanvas (outputMethod) {
-    outputMethod(this.trianglify)
-  }
-
-  outputTypes (output) {
-    return {
-      canvas: {
-        method: 'generateCanvas',
-        component: ({ canvasRef, height, width }) => (
-          <canvas ref={canvasRef} height={height} width={width} />
-        )
-      },
-
-      svg: {
-        method: 'generateSvg',
-        component: ({ pattern, height, width }) => (
-          <svg dangerouslySetInnerHTML={{ __html: pattern }} height={height} width={width} />
-        )
-      },
-
-      png: {
-        method: 'generatePng',
-        component: ({ pattern, height, width }) => (
-          <img src={pattern} height={height} width={width} />
-        )
-      }
-    }[output]
-  }
-
-  generatePattern ({ output, ...props }) {
-    const pattern = trianglify(props)
-    const outputMethod = pattern[output]
-
-    this[this.outputTypes(output).method](outputMethod)
-  }
-
-  render () {
-    const { output, width, height } = this.props
-
-    return this.outputTypes(output).component({
-      height,
+  useEffect(() => {
+    const pattern = trianglify({
       width,
-      pattern: this.state.pattern,
-      canvasRef: (node) => (this.trianglify = node)
+      height,
+      ...props,
     })
-  }
+
+    const generateOutput = pattern[choosenOutput[output].output]
+
+    if (!generateOutput) {
+      throw new Error('Invalid output. Only "canvas" or "svg" are allowed.')
+    }
+
+    const outputMethod = choosenOutput[output].method(generateOutput)
+
+    forceUpdate({})
+  }, [])
+
+  const Tag = output
+  return <Tag ref={ref} width={width} height={height} />
 }
-
-const getProps = extractProps(PropTypes)
-
-Trianglify.defaultProps = getProps('defaultValue')
-Trianglify.propTypes = getProps('type')
 
 export default Trianglify
