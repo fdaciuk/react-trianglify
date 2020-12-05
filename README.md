@@ -56,5 +56,5 @@ You can access `react-trianglify` live documentation [here][doc-url]
 [doc-url]: https://fdaciuk.github.io/react-trianglify
 [license-url]: https://github.com/fdaciuk/licenses/blob/master/MIT-LICENSE.md
 [en-docs]: /README.md
-[pt-br-docs]: /docs/README-pt-br.md
+[pt-br-docs]: /docs/pt-br.md
 
