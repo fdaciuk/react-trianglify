@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import Trianglify from 'react-trianglify2'
+import Trianglify from 'react-trianglify'
 
 export default function Home() {
   return (
