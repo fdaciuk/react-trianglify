@@ -9,13 +9,13 @@
 **Using NPM:**
 
 ```console
-npm install --save react-trianglify
+npm install --save react-trianglify trianglify
 ```
 
 **Using Yarn:**
 
 ```console
-yarn add react-trianglify
+yarn add react-trianglify trianglify
 ```
 
 ## Dependencies
