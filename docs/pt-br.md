@@ -44,9 +44,9 @@ Possíveis valores para `output`:
 - `canvas` (padrão)
 - `svg`
 
-## Exemplo ao vivo
+## Demonstração
 
-Você pode ver o `react-trianglify` funcionando [aqui][doc-url]
+Você pode ver o `react-trianglify` funcionando [aqui][demo-url]
 
 ## Licença
 
@@ -54,7 +54,7 @@ Você pode ver o `react-trianglify` funcionando [aqui][doc-url]
 
 [trianglify-url]: https://github.com/qrohlf/trianglify
 [trianglify-url-options]: https://github.com/qrohlf/trianglify#-configuration
-[doc-url]: https://fdaciuk.github.io/react-trianglify
+[demo-url]: https://react-trianglify.vercel.app/
 [license-url]: https://github.com/fdaciuk/licenses/blob/master/MIT-LICENSE.md
 [en-docs]: /README.md
 [pt-br-docs]: /docs/pt-br.md

@@ -43,9 +43,9 @@ Possible `output` values:
 - `canvas` (default)
 - `svg`
 
-## Live documentation
+## Live demo
 
-You can access `react-trianglify` live documentation [here][doc-url]
+You can access `react-trianglify` live demo [here][demo-url]
 
 ## License
 
@@ -53,7 +53,7 @@ You can access `react-trianglify` live documentation [here][doc-url]
 
 [trianglify-url]: https://github.com/qrohlf/trianglify
 [trianglify-url-options]: https://github.com/qrohlf/trianglify#-configuration
-[doc-url]: https://fdaciuk.github.io/react-trianglify
+[demo-url]: https://react-trianglify.vercel.app/
 [license-url]: https://github.com/fdaciuk/licenses/blob/master/MIT-LICENSE.md
 [en-docs]: /README.md
 [pt-br-docs]: /docs/pt-br.md
