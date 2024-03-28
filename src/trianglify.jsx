@@ -1,7 +1,7 @@
-import React, { useCallback, useMemo, useRef, useEffect, useState } from 'react'
+import { useCallback, useMemo, useRef, useEffect, useState } from 'react'
 import trianglify from 'trianglify'
 
-function Trianglify ({
+export function Trianglify({
   output = 'canvas',
   width = 600,
   height = 400,
@@ -16,25 +16,28 @@ function Trianglify ({
   const canvasOutput = useCallback((generateOutput) => {
     const canvas = generateOutput()
     const ctx = ref.current.getContext('2d')
-    ctx.drawImage(canvas,0, 0, width, height)
+    ctx.drawImage(canvas, 0, 0, width, height)
   }, [])
 
-  const choosenOutput = useMemo(() => ({
-    canvas: {
-      output: 'toCanvas',
-      method: canvasOutput,
-    },
-    svg: {
-      output: 'toSVG',
-      method: svgOutput,
-    },
-  }), [])
+  const choosenOutput = useMemo(
+    () => ({
+      canvas: {
+        output: 'toCanvas',
+        method: canvasOutput
+      },
+      svg: {
+        output: 'toSVG',
+        method: svgOutput
+      }
+    }),
+    []
+  )
 
   useEffect(() => {
     const pattern = trianglify({
       width,
       height,
-      ...props,
+      ...props
     })
 
     const generateOutput = pattern[choosenOutput[output].output]
@@ -43,7 +46,7 @@ function Trianglify ({
       throw new Error('Invalid output. Only "canvas" or "svg" are allowed.')
     }
 
-    const outputMethod = choosenOutput[output].method(generateOutput)
+    choosenOutput[output].method(generateOutput)
 
     forceUpdate({})
   }, [])

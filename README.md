@@ -2,9 +2,15 @@
 
 > React Wrapper Component for [trianglify][trianglify-url]
 
-:us: [English][en-docs]&nbsp;&nbsp;|&nbsp;&nbsp;:brazil: [Português do Brasil][pt-br-docs]
+:us: [English][en-docs] | :brazil: [Português do Brasil][pt-br-docs]
 
 ## Installation
+
+**Using Bun:**
+
+```console
+bun add react-trianglify trianglify
+```
 
 **Using NPM:**
 
@@ -29,10 +35,7 @@ PS.: If you have any problems with latest trianglify version, try to install the
 ```js
 import Trianglify from 'react-trianglify'
 
-ReactDOM.render(
-  <Trianglify />,
-  $mountNode
-)
+ReactDOM.render(<Trianglify />, $mountNode)
 ```
 
 ## Props
@@ -40,6 +43,7 @@ ReactDOM.render(
 By taking `output`, you can use any [trianglify][trianglify-url-options] allowed options.
 
 Possible `output` values:
+
 - `canvas` (default)
 - `svg`
 
@@ -57,4 +61,3 @@ You can access `react-trianglify` live demo [here][demo-url]
 [license-url]: https://github.com/fdaciuk/licenses/blob/master/MIT-LICENSE.md
 [en-docs]: /README.md
 [pt-br-docs]: /docs/pt-br.md
-

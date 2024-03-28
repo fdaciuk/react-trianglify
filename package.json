@@ -1,54 +1,51 @@
 {
+  "$schema": "https://json.schemastore.org/package.json",
   "name": "react-trianglify",
+  "private": true,
   "version": "3.0.3",
-  "description": "React Trianglify",
+  "description": "Wrapper in React for Trianglify library",
+  "repository": "https://github.com/fdaciuk/react-trianglify",
   "author": "Fernando Daciuk - @fdaciuk",
   "license": "MIT",
-  "repository": "fdaciuk/react-trianglify",
-  "main": "dist/index.js",
-  "module": "dist/index.modern.js",
-  "source": "src/index.js",
-  "engines": {
-    "node": ">=10"
+  "type": "module",
+  "main": "./dist/react-trianglify.umd.cjs",
+  "module": "./dist/react-trianglify.js",
+  "types": "./@types/react-trianglify.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/react-trianglify.js",
+      "require": "./dist/react-trianglify.umd.cjs"
+    }
   },
   "scripts": {
-    "build": "microbundle-crl --no-compress --format modern,cjs",
-    "start": "microbundle-crl watch --no-compress --format modern,cjs",
-    "prepare": "run-s build",
-    "test": "run-s test:unit test:lint test:build",
-    "test:build": "run-s build",
-    "test:lint": "eslint .",
-    "test:unit": "cross-env CI=1 react-scripts test --env=jsdom",
-    "test:watch": "react-scripts test --env=jsdom",
-    "predeploy": "cd example && yarn install && yarn run build",
-    "deploy": "gh-pages -d example/build",
-    "postversion": "npm publish"
-  },
-  "peerDependencies": {
-    "react": "17.x",
-    "trianglify": "4.x"
+    "dev": "vite",
+    "build": "bun run typecheck && vite build",
+    "typecheck": "bunx --bun tsc --noEmit",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
   },
   "devDependencies": {
-    "babel-eslint": "10.0.3",
-    "cross-env": "7.0.2",
-    "eslint": "6.8.0",
-    "eslint-config-prettier": "6.7.0",
-    "eslint-config-standard": "14.1.0",
-    "eslint-config-standard-react": "9.2.0",
-    "eslint-plugin-import": "2.18.2",
-    "eslint-plugin-node": "11.0.0",
-    "eslint-plugin-prettier": "3.1.1",
-    "eslint-plugin-promise": "4.2.1",
-    "eslint-plugin-react": "7.17.0",
-    "eslint-plugin-standard": "4.0.1",
-    "gh-pages": "2.2.0",
-    "microbundle-crl": "0.13.10",
-    "npm-run-all": "4.1.5",
-    "prettier": "2.0.4",
-    "react": "17.0.1",
-    "react-dom": "17.0.1",
-    "react-scripts": "3.4.1",
-    "trianglify": "4.1.1"
+    "@types/trianglify": "1.2.3",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "trianglify": "4.1.1",
+    "@types/react": "18.2.66",
+    "@types/react-dom": "18.2.22",
+    "@typescript-eslint/eslint-plugin": "7.2.0",
+    "@typescript-eslint/parser": "7.2.0",
+    "@vitejs/plugin-react": "4.2.1",
+    "eslint": "8.57.0",
+    "eslint-plugin-react-hooks": "4.6.0",
+    "eslint-plugin-react-refresh": "0.4.6",
+    "typescript": "5.2.2",
+    "vite": "5.2.0"
+  },
+  "peerDependencies": {
+    "react": ">=18.x",
+    "trianglify": ">=4.x"
+  },
+  "engines": {
+    "node": ">=20"
   },
   "files": [
     "dist"

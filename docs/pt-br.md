@@ -2,9 +2,15 @@
 
 > Componente React Wrapper para [trianglify][trianglify-url]
 
-:us: [English][en-docs]&nbsp;&nbsp;|&nbsp;&nbsp;:brazil: [Português do Brasil][pt-br-docs]
+:us: [English][en-docs] | :brazil: [Português do Brasil][pt-br-docs]
 
 ## Instalação
+
+**Utilizando Bun:**
+
+```console
+bun add react-trianglify trianglify
+```
 
 **Utilizando NPM:**
 
@@ -22,7 +28,7 @@ yarn add react-trianglify trianglify
 
 Você precisa ter o `react` e o `trianglify` instalados em seu projeto.
 
-Obs.:  Se você tiver qualquer problema usando a versão mais recente do trianglify,
+Obs.: Se você tiver qualquer problema usando a versão mais recente do trianglify,
 instale a versão que foi testada com esse projeto `v4.1.1`.
 
 ## Uso
@@ -30,10 +36,7 @@ instale a versão que foi testada com esse projeto `v4.1.1`.
 ```js
 import Trianglify from 'react-trianglify'
 
-ReactDOM.render(
-  <Trianglify />,
-  $mountNode
-)
+ReactDOM.render(<Trianglify />, $mountNode)
 ```
 
 ## Propriedades (props)
@@ -41,6 +44,7 @@ ReactDOM.render(
 Tirando `output`, você pode usar qualquer opção permitida pelo [trianglify][trianglify-url-options].
 
 Possíveis valores para `output`:
+
 - `canvas` (padrão)
 - `svg`
 
@@ -58,4 +62,3 @@ Você pode ver o `react-trianglify` funcionando [aqui][demo-url]
 [license-url]: https://github.com/fdaciuk/licenses/blob/master/MIT-LICENSE.md
 [en-docs]: /README.md
 [pt-br-docs]: /docs/pt-br.md
-
