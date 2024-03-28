@@ -13,7 +13,8 @@
   "exports": {
     ".": {
       "import": "./dist/react-trianglify.js",
-      "require": "./dist/react-trianglify.umd.cjs"
+      "require": "./dist/react-trianglify.umd.cjs",
+      "types": "./@types/react-trianglify.d.ts"
     }
   },
   "scripts": {
