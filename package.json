@@ -1,7 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/package.json",
   "name": "react-trianglify",
-  "private": true,
   "version": "4.0.1",
   "description": "Wrapper in React for Trianglify library",
   "repository": "https://github.com/fdaciuk/react-trianglify",
