@@ -19,7 +19,8 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "yarn run typecheck && vite build",
+    "build:lib": "yarn typecheck && vite build --config vite.config-lib.ts",
+    "build": "yarn typecheck && vite build",
     "typecheck": "tsc --noEmit",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
