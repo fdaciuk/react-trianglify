@@ -46,6 +46,11 @@
     "react": ">=18.x",
     "trianglify": ">=4.x"
   },
+  "release": {
+    "branches": [
+      "main"
+    ]
+  },
   "engines": {
     "node": ">=20"
   },
