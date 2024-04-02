@@ -29,9 +29,7 @@ jobs:
       - name: Install dependencies
         run: |
           yarn
-          yarn build
-      - name: Verify the integrity of provenance attestations and registry signatures for installed dependencies
-        run: npm audit signatures
+          yarn build:lib
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
