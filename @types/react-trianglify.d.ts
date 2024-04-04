@@ -6,4 +6,5 @@ declare module "react-trianglify" {
 
   export function Trianglify(props: TrianglifyProps): JSX.Element
   export default Trianglify
+  export type { TrianglifyProps }
 }
