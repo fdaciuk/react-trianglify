@@ -1,5 +1,5 @@
 import { useCallback, useMemo, useRef, useEffect, useState } from 'react'
-import trianglify from 'trianglify'
+import 'trianglify'
 
 export function Trianglify({
   output = 'canvas',
@@ -34,7 +34,7 @@ export function Trianglify({
   )
 
   useEffect(() => {
-    const pattern = trianglify({
+    const pattern = window.trianglify({
       width,
       height,
       ...props
