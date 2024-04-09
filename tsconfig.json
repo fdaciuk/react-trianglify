@@ -25,7 +25,7 @@
     "baseUrl": ".",
     "paths": {
       "react-trianglify": [
-        "./src/react-trianglify.jsx"
+        "./src/trianglify.jsx"
       ]
     },
     "typeRoots": [
