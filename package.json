@@ -7,13 +7,13 @@
   "author": "Fernando Daciuk - @fdaciuk",
   "license": "MIT",
   "type": "module",
-  "main": "./dist/react-trianglify.umd.cjs",
-  "module": "./dist/react-trianglify.js",
+  "main": "./lib/react-trianglify.umd.cjs",
+  "module": "./lib/react-trianglify.js",
   "types": "./@types/react-trianglify.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/react-trianglify.js",
-      "require": "./dist/react-trianglify.umd.cjs",
+      "import": "./lib/react-trianglify.js",
+      "require": "./lib/react-trianglify.umd.cjs",
       "types": "./@types/react-trianglify.d.ts"
     }
   },
@@ -40,7 +40,8 @@
     "semantic-release": "23.0.6",
     "trianglify": "4.1.1",
     "typescript": "5.2.2",
-    "vite": "5.2.0"
+    "vite": "5.2.0",
+    "vite-tsconfig-paths": "4.3.2"
   },
   "peerDependencies": {
     "react": ">=18.x",
@@ -55,7 +56,7 @@
     "node": ">=20"
   },
   "files": [
-    "dist",
+    "lib",
     "@types"
   ]
 }
