@@ -8,20 +8,26 @@
 
 **Utilizando Bun:**
 
-```console
+```sh
 bun add react-trianglify trianglify
+# E se você estiver usando TypeScript, adicione o pacote `@types/trianglify` como `devDependency`:
+bun add --dev @types/trianglify
 ```
 
 **Utilizando NPM:**
 
-```console
+```sh
 npm install --save react-trianglify trianglify
+# E se você estiver usando TypeScript, adicione o pacote `@types/trianglify` como `devDependency`:
+npm install --save-dev @types/trianglify
 ```
 
 **Utilizando Yarn:**
 
-```console
+```sh
 yarn add react-trianglify trianglify
+# E se você estiver usando TypeScript, adicione o pacote `@types/trianglify` como `devDependency`:
+yarn add --dev @types/trianglify
 ```
 
 ## Dependências
