@@ -10,24 +10,24 @@
 
 ```sh
 bun add react-trianglify trianglify
-# If you're using TypeScript, add `@types/trianglify` as `devDependency`:
-bun add --dev @types/trianglify
+# If you're using TypeScript, add these types as `devDependencies`:
+bun add --dev @types/trianglify @types/chroma-js
 ```
 
 **Using NPM:**
 
 ```sh
 npm install --save react-trianglify trianglify
-# If you're using TypeScript, add `@types/trianglify` as `devDependency`:
-npm install --save-dev @types/trianglify
+# If you're using TypeScript, add these types as `devDependencies`:
+npm install --save-dev @types/trianglify @types/chroma-js
 ```
 
 **Using Yarn:**
 
 ```sh
 yarn add react-trianglify trianglify
-# If you're using TypeScript, add `@types/trianglify` as `devDependency`:
-yarn add --dev @types/trianglify
+# If you're using TypeScript, add these types as `devDependencies`:
+yarn add --dev @types/trianglify @types/chroma-js
 ```
 
 ## Dependencies

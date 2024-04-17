@@ -1,12 +1,13 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig.json",
   "compilerOptions": {
+    "esModuleInterop": true,
     "target": "ES2020",
     "useDefineForClassFields": true,
     "lib": [
       "ES2020",
       "DOM",
-      "DOM.Iterable",
+      "DOM.Iterable"
     ],
     "module": "ESNext",
     "skipLibCheck": true,
@@ -31,7 +32,7 @@
     "typeRoots": [
       "./node_modules/@types",
       "./@types"
-    ],
+    ]
   },
   "include": [
     "src",
