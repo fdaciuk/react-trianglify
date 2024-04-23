@@ -1,5 +1,5 @@
 declare module "trianglify" {
-  declare function trianglify(opts?: trianglify.Options): trianglify.IPattern
+  declare function trianglify(opts?: trianglify.Options): trianglify.PatternInterface
 
   declare namespace trianglify {
     import { mix, type Color, type Scale } from "chroma-js"
@@ -65,7 +65,7 @@ declare module "trianglify" {
       color: Color
     }>
 
-    interface IPattern {
+    interface PatternInterface {
       points: Points
       polys: Polys
       opts: RequiredOptions
@@ -73,7 +73,7 @@ declare module "trianglify" {
       toCanvas(canvas?: HTMLCanvasElement, opts?: CanvasOptions): HTMLCanvasElement
     }
 
-    class Pattern extends IPattern {
+    class Pattern extends PatternInterface {
       constructor(points: Points, polys: Polys, opts: RequiredOptions)
     }
 
@@ -89,8 +89,6 @@ declare module "trianglify" {
       mix: typeof mix
       colorbrewer: Record<string, string[]>
     }
-
-    export const Pattern: IPattern
   }
 
   export as namespace trianglify
