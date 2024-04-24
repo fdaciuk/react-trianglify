@@ -11,7 +11,7 @@ export default defineConfig({
   ],
   build: {
     lib: {
-      entry: resolve(__dirname, 'src', 'trianglify.jsx'),
+      entry: resolve(__dirname, 'src', 'lib', 'react-trianglify.jsx'),
       name: 'ReactTrianglify',
       fileName: 'react-trianglify',
     },
