@@ -10,8 +10,7 @@ lerna-debug.log*
 node_modules
 dist
 dist-ssr
-lib
-!src/lib
+/lib
 *.local
 
 # Editor directories and files
