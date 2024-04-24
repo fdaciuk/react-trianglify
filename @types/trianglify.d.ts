@@ -73,8 +73,13 @@ declare module "trianglify" {
       toCanvas(canvas?: HTMLCanvasElement, opts?: CanvasOptions): HTMLCanvasElement
     }
 
-    class Pattern extends PatternInterface {
+    class Pattern implements PatternInterface {
       constructor(points: Points, polys: Polys, opts: RequiredOptions)
+      points: Points
+      polys: Polys
+      opts: RequiredOptions
+      toSVG(element?: SVGElement, opts?: SVGOptions): SVGElement
+      toCanvas(canvas?: HTMLCanvasElement, opts?: CanvasOptions): HTMLCanvasElement
     }
 
     export const defaultOptions: RequiredOptions
