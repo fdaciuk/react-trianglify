@@ -19,8 +19,10 @@ export default defineConfig({
       external: ['react', 'trianglify'],
       output: {
         dir: 'lib',
+        exports: 'named',
         globals: {
           react: 'React',
+          trianglify: 'trianglify',
         },
       },
     },
