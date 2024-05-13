@@ -1,0 +1,12 @@
+diff --git a/node_modules/trianglify/dist/trianglify.js b/node_modules/trianglify/dist/trianglify.js
+index 62e2fac..4801422 100644
+--- a/node_modules/trianglify/dist/trianglify.js
++++ b/node_modules/trianglify/dist/trianglify.js
+@@ -1,6 +1,6 @@
+ 'use strict';
+
+-function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
++function _interopDefault(ex) { return (ex && (typeof ex === 'object' || typeof ex === 'function') && 'default' in ex) ? ex['default'] : ex; }
+
+ var Delaunator = _interopDefault(require('delaunator'));
+ var chroma = _interopDefault(require('chroma-js'));
