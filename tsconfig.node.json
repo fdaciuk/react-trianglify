@@ -8,6 +8,7 @@
     "moduleResolution": "NodeNext",
     "allowSyntheticDefaultImports": true,
     "strict": true,
+    "exactOptionalPropertyTypes": true,
     "baseUrl": ".",
     "paths": {
       "react-trianglify": [
