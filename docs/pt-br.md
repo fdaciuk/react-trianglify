@@ -11,7 +11,7 @@
 ```sh
 bun add react-trianglify trianglify
 # E se você estiver usando TypeScript, adicione esses pacotes como `devDependencies`:
-bun add --dev @types/chroma-js
+bun add --dev @types/trianglify
 ```
 
 **Utilizando NPM:**
@@ -19,7 +19,7 @@ bun add --dev @types/chroma-js
 ```sh
 npm install --save react-trianglify trianglify
 # E se você estiver usando TypeScript, adicione esses pacotes como `devDependencies`:
-npm install --save-dev @types/chroma-js
+npm install --save-dev @types/trianglify
 ```
 
 **Utilizando Yarn:**
@@ -27,7 +27,7 @@ npm install --save-dev @types/chroma-js
 ```sh
 yarn add react-trianglify trianglify
 # E se você estiver usando TypeScript, adicione esses pacotes como `devDependencies`:
-yarn add --dev @types/chroma-js
+yarn add --dev @types/trianglify
 ```
 
 ## Dependências
@@ -57,13 +57,6 @@ Possíveis valores para `output`:
 ## Demonstração
 
 Você pode ver o `react-trianglify` funcionando [aqui][demo-url]
-
-## Resolução de problemas
-
-### Os tipos no TypeScript estão diferentes do runtime
-
-Se você instalou `@types/trianglify`, por favor remova esse pacote. 
-Nós já temos os tipos corretos para o `trianglify` incluídos no `react-trianglify`.
 
 ## Licença
 
