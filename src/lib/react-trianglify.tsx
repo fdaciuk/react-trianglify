@@ -1,16 +1,16 @@
-import { useRef, useEffect } from 'react'
+import { useRef, useEffect, memo } from 'react'
 import trianglify, { type Options } from 'trianglify'
 
 export type TrianglifyProps = Options & Partial<{
   output: "canvas" | "svg"
 }>
 
-export function Trianglify({
+export const Trianglify = memo(({
   output = 'canvas',
   width = 600,
   height = 400,
   ...props
-}: TrianglifyProps) {
+}: TrianglifyProps) => {
   const refCanvas = useRef<HTMLCanvasElement | null>(null)
   const refSVG = useRef<SVGSVGElement | null>(null)
   useEffect(() => {
@@ -34,6 +34,6 @@ export function Trianglify({
   }
 
   return <canvas ref={refCanvas} width={width} height={height} />
-}
+})
 
 export default Trianglify
