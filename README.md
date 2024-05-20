@@ -59,11 +59,11 @@ You can access `react-trianglify` live demo [here][demo-url]
 
 ## License
 
-[MIT][license-url] &copy; Fernando Daciuk
+[GPL-3.0][license-url] &copy; Fernando Daciuk
 
 [trianglify-url]: https://github.com/qrohlf/trianglify
 [trianglify-url-options]: https://github.com/qrohlf/trianglify#-configuration
 [demo-url]: https://react-trianglify.vercel.app/
-[license-url]: https://github.com/fdaciuk/licenses/blob/master/MIT-LICENSE.md
+[license-url]: /LICENSE
 [en-docs]: /README.md
 [pt-br-docs]: /docs/pt-br.md
