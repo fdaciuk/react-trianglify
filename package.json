@@ -9,12 +9,12 @@
   "type": "module",
   "main": "./lib/react-trianglify.umd.cjs",
   "module": "./lib/react-trianglify.js",
-  "types": "./@types/react-trianglify.d.ts",
+  "types": "./lib/react-trianglify.d.ts",
   "exports": {
     ".": {
       "import": "./lib/react-trianglify.js",
       "require": "./lib/react-trianglify.umd.cjs",
-      "types": "./@types/react-trianglify.d.ts"
+      "types": "./lib/react-trianglify.d.ts"
     }
   },
   "scripts": {
@@ -39,6 +39,7 @@
     "@storybook/test": "8.0.10",
     "@types/react": "18.2.75",
     "@types/react-dom": "18.2.24",
+    "@types/trianglify": "4.1.1",
     "@typescript-eslint/eslint-plugin": "7.6.0",
     "@typescript-eslint/parser": "7.6.0",
     "@vitejs/plugin-react": "4.2.1",
@@ -54,6 +55,7 @@
     "trianglify": "4.1.1",
     "typescript": "5.4.5",
     "vite": "5.2.8",
+    "vite-plugin-dts": "3.9.1",
     "vite-tsconfig-paths": "4.3.2"
   },
   "peerDependencies": {
