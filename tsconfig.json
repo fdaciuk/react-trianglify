@@ -36,8 +36,7 @@
     ]
   },
   "include": [
-    "src",
-    "@types"
+    "src"
   ],
   "references": [
     {
